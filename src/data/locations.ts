@@ -1,0 +1,290 @@
+import { Division, District, Locality } from '../types';
+
+export const MAHARASHTRA_DIVISIONS: Division[] = [
+  { id: 'div-konkan', name_en: 'Konkan Division', name_mr: 'कोकण विभाग', name_hi: 'कोंकण प्रभाग', code: 'KNK' },
+  { id: 'div-pune', name_en: 'Pune Division', name_mr: 'पुणे विभाग', name_hi: 'पुणे प्रभाग', code: 'PNE' },
+  { id: 'div-nashik', name_en: 'Nashik Division', name_mr: 'नाशिक विभाग', name_hi: 'नासिक प्रभाग', code: 'NSK' },
+  { id: 'div-marathwada', name_en: 'Chhatrapati Sambhajinagar Division', name_mr: 'छत्रपती संभाजीनगर विभाग', name_hi: 'छत्रपति संभाजीनगर प्रभाग', code: 'CSN' },
+  { id: 'div-amravati', name_en: 'Amravati Division', name_mr: 'अमरावती विभाग', name_hi: 'अमरावती प्रभाग', code: 'AMR' },
+  { id: 'div-nagpur', name_en: 'Nagpur Division', name_mr: 'नागपूर विभाग', name_hi: 'नागपुर प्रभाग', code: 'NGP' },
+];
+
+export const MAHARASHTRA_DISTRICTS: District[] = [
+  // Konkan
+  { id: 'dst-mumbai-city', division_id: 'div-konkan', name_en: 'Mumbai City', name_mr: 'मुंबई शहर', name_hi: 'मुंबई शहर', code: 'MH-01', headquarters: 'Mumbai', latitude: 18.9388, longitude: 72.8353 },
+  { id: 'dst-mumbai-suburban', division_id: 'div-konkan', name_en: 'Mumbai Suburban', name_mr: 'मुंबई उपनगर', name_hi: 'मुंबई उपनगर', code: 'MH-02', headquarters: 'Bandra', latitude: 19.0600, longitude: 72.8400 },
+  { id: 'dst-thane', division_id: 'div-konkan', name_en: 'Thane', name_mr: 'ठाणे', name_hi: 'ठाणे', code: 'MH-04', headquarters: 'Thane', latitude: 19.2183, longitude: 72.9781 },
+  { id: 'dst-palghar', division_id: 'div-konkan', name_en: 'Palghar', name_mr: 'पालघर', name_hi: 'पालघर', code: 'MH-48', headquarters: 'Palghar', latitude: 19.6967, longitude: 72.7699 },
+  { id: 'dst-raigad', division_id: 'div-konkan', name_en: 'Raigad', name_mr: 'रायगड', name_hi: 'रायगड', code: 'MH-06', headquarters: 'Alibag', latitude: 18.6414, longitude: 72.8722 },
+  { id: 'dst-ratnagiri', division_id: 'div-konkan', name_en: 'Ratnagiri', name_mr: 'रत्नागिरी', name_hi: 'रत्नागिरी', code: 'MH-08', headquarters: 'Ratnagiri', latitude: 16.9902, longitude: 73.3120 },
+  { id: 'dst-sindhudurg', division_id: 'div-konkan', name_en: 'Sindhudurg', name_mr: 'सिंधुदुर्ग', name_hi: 'सिंधुदुर्ग', code: 'MH-07', headquarters: 'Oros', latitude: 16.1667, longitude: 73.7167 },
+
+  // Pune
+  { id: 'dst-pune', division_id: 'div-pune', name_en: 'Pune', name_mr: 'पुणे', name_hi: 'पुणे', code: 'MH-12', headquarters: 'Pune', latitude: 18.5204, longitude: 73.8567 },
+  { id: 'dst-satara', division_id: 'div-pune', name_en: 'Satara', name_mr: 'सातारा', name_hi: 'सातारा', code: 'MH-11', headquarters: 'Satara', latitude: 17.6805, longitude: 74.0183 },
+  { id: 'dst-solapur', division_id: 'div-pune', name_en: 'Solapur', name_mr: 'सोलापूर', name_hi: 'सोलापुर', code: 'MH-13', headquarters: 'Solapur', latitude: 17.6599, longitude: 75.9064 },
+  { id: 'dst-kolhapur', division_id: 'div-pune', name_en: 'Kolhapur', name_mr: 'कोल्हापूर', name_hi: 'कोल्हापुर', code: 'MH-09', headquarters: 'Kolhapur', latitude: 16.7050, longitude: 74.2433 },
+  { id: 'dst-sangli', division_id: 'div-pune', name_en: 'Sangli', name_mr: 'सांगली', name_hi: 'सांगली', code: 'MH-10', headquarters: 'Sangli', latitude: 16.8524, longitude: 74.5815 },
+
+  // Nashik
+  { id: 'dst-nashik', division_id: 'div-nashik', name_en: 'Nashik', name_mr: 'नाशिक', name_hi: 'नासिक', code: 'MH-15', headquarters: 'Nashik', latitude: 19.9975, longitude: 73.7898 },
+  { id: 'dst-ahilyanagar', division_id: 'div-nashik', name_en: 'Ahilyanagar (Ahmednagar)', name_mr: 'अहिल्यानगर (अहमदनगर)', name_hi: 'अहिल्यानगर (अहमदनगर)', code: 'MH-16', headquarters: 'Ahilyanagar', latitude: 19.0952, longitude: 74.7496 },
+  { id: 'dst-jalgaon', division_id: 'div-nashik', name_en: 'Jalgaon', name_mr: 'जळगाव', name_hi: 'जलगांव', code: 'MH-19', headquarters: 'Jalgaon', latitude: 21.0077, longitude: 75.5626 },
+  { id: 'dst-dhule', division_id: 'div-nashik', name_en: 'Dhule', name_mr: 'धुळे', name_hi: 'धूले', code: 'MH-18', headquarters: 'Dhule', latitude: 20.9042, longitude: 74.7749 },
+  { id: 'dst-nandurbar', division_id: 'div-nashik', name_en: 'Nandurbar', name_mr: 'नंदुरबार', name_hi: 'नंदुरबार', code: 'MH-39', headquarters: 'Nandurbar', latitude: 21.3700, longitude: 74.2400 },
+
+  // Marathwada (Chhatrapati Sambhajinagar)
+  { id: 'dst-csn', division_id: 'div-marathwada', name_en: 'Chhatrapati Sambhajinagar', name_mr: 'छत्रपती संभाजीनगर', name_hi: 'छत्रपति संभाजीनगर', code: 'MH-20', headquarters: 'Chhatrapati Sambhajinagar', latitude: 19.8762, longitude: 75.3433 },
+  { id: 'dst-jalna', division_id: 'div-marathwada', name_en: 'Jalna', name_mr: 'जालना', name_hi: 'जालना', code: 'MH-21', headquarters: 'Jalna', latitude: 19.8410, longitude: 75.8864 },
+  { id: 'dst-parbhani', division_id: 'div-marathwada', name_en: 'Parbhani', name_mr: 'परभणी', name_hi: 'परभणी', code: 'MH-22', headquarters: 'Parbhani', latitude: 19.2608, longitude: 76.7748 },
+  { id: 'dst-hingoli', division_id: 'div-marathwada', name_en: 'Hingoli', name_mr: 'हिंगोली', name_hi: 'हिंगोली', code: 'MH-38', headquarters: 'Hingoli', latitude: 19.7180, longitude: 77.1480 },
+  { id: 'dst-nanded', division_id: 'div-marathwada', name_en: 'Nanded', name_mr: 'नांदेड', name_hi: 'नांदेड़', code: 'MH-26', headquarters: 'Nanded', latitude: 19.1383, longitude: 77.3210 },
+  { id: 'dst-beed', division_id: 'div-marathwada', name_en: 'Beed', name_mr: 'बीड', name_hi: 'बीड', code: 'MH-23', headquarters: 'Beed', latitude: 18.9892, longitude: 75.7601 },
+  { id: 'dst-latur', division_id: 'div-marathwada', name_en: 'Latur', name_mr: 'लातूर', name_hi: 'लातूर', code: 'MH-24', headquarters: 'Latur', latitude: 18.4088, longitude: 76.5604 },
+  { id: 'dst-dharashiv', division_id: 'div-marathwada', name_en: 'Dharashiv (Osmanabad)', name_mr: 'धाराशिव (उस्मानाबाद)', name_hi: 'धाराशिव (उस्मानाबाद)', code: 'MH-25', headquarters: 'Dharashiv', latitude: 18.1861, longitude: 76.0419 },
+
+  // Amravati
+  { id: 'dst-amravati', division_id: 'div-amravati', name_en: 'Amravati', name_mr: 'अमरावती', name_hi: 'अमरावती', code: 'MH-27', headquarters: 'Amravati', latitude: 20.9374, longitude: 77.7796 },
+  { id: 'dst-akola', division_id: 'div-amravati', name_en: 'Akola', name_mr: 'अकोला', name_hi: 'अकोला', code: 'MH-30', headquarters: 'Akola', latitude: 20.7002, longitude: 77.0082 },
+  { id: 'dst-buldhana', division_id: 'div-amravati', name_en: 'Buldhana', name_mr: 'बुलढाणा', name_hi: 'बुलढाणा', code: 'MH-28', headquarters: 'Buldhana', latitude: 20.5292, longitude: 76.1843 },
+  { id: 'dst-yavatmal', division_id: 'div-amravati', name_en: 'Yavatmal', name_mr: 'यवतमाळ', name_hi: 'यवतमाल', code: 'MH-29', headquarters: 'Yavatmal', latitude: 20.3888, longitude: 78.1204 },
+  { id: 'dst-washim', division_id: 'div-amravati', name_en: 'Washim', name_mr: 'वाशीम', name_hi: 'वाशिम', code: 'MH-37', headquarters: 'Washim', latitude: 20.1066, longitude: 77.1472 },
+
+  // Nagpur
+  { id: 'dst-nagpur', division_id: 'div-nagpur', name_en: 'Nagpur', name_mr: 'नागपूर', name_hi: 'नागपुर', code: 'MH-31', headquarters: 'Nagpur', latitude: 21.1458, longitude: 79.0882 },
+  { id: 'dst-wardha', division_id: 'div-nagpur', name_en: 'Wardha', name_mr: 'वर्धा', name_hi: 'वर्धा', code: 'MH-32', headquarters: 'Wardha', latitude: 20.7453, longitude: 78.6022 },
+  { id: 'dst-bhandara', division_id: 'div-nagpur', name_en: 'Bhandara', name_mr: 'भंडारा', name_hi: 'भंडारा', code: 'MH-36', headquarters: 'Bhandara', latitude: 21.1697, longitude: 79.6547 },
+  { id: 'dst-gondia', division_id: 'div-nagpur', name_en: 'Gondia', name_mr: 'गोंदिया', name_hi: 'गोंदिया', code: 'MH-35', headquarters: 'Gondia', latitude: 21.4602, longitude: 80.1961 },
+  { id: 'dst-chandrapur', division_id: 'div-nagpur', name_en: 'Chandrapur', name_mr: 'चंद्रपूर', name_hi: 'चंद्रपुर', code: 'MH-34', headquarters: 'Chandrapur', latitude: 19.9615, longitude: 79.2961 },
+  { id: 'dst-gadchiroli', division_id: 'div-nagpur', name_en: 'Gadchiroli', name_mr: 'गडचिरोली', name_hi: 'गडचिरोली', code: 'MH-33', headquarters: 'Gadchiroli', latitude: 20.1843, longitude: 79.9950 },
+];
+
+export const TOP_LOCALITIES: Locality[] = [
+  // Amravati Localities
+  {
+    id: 'loc-amr-rajapeth',
+    city_name: 'Amravati',
+    district_name: 'Amravati',
+    name_en: 'Rajapeth',
+    name_mr: 'राजापेठ',
+    name_hi: 'राजापेठ',
+    pincode: '444605',
+    avg_price_per_sqft: 4250,
+    median_price: 4800000,
+    total_listings_count: 14,
+    latitude: 20.9250,
+    longitude: 77.7550,
+    description: 'Prime commercial and residential hub in central Amravati with excellent connectivity to Badnera Road and top colleges.',
+    nearby_schools: ['Holy Cross Convent High School', 'Shri Shivaji Science College'],
+    nearby_hospitals: ['PDMC Hospital', 'Rathi Hospital'],
+    nearby_transit: ['Amravati Railway Station (2.5 km)', 'Rajapeth Bus Stand']
+  },
+  {
+    id: 'loc-amr-badnera-road',
+    city_name: 'Amravati',
+    district_name: 'Amravati',
+    name_en: 'Badnera Road',
+    name_mr: 'बडनेरा रोड',
+    name_hi: 'बडनेरा रोड',
+    pincode: '444606',
+    avg_price_per_sqft: 3850,
+    median_price: 4200000,
+    total_listings_count: 19,
+    latitude: 20.9120,
+    longitude: 77.7480,
+    description: 'Rapidly expanding residential corridor featuring modern apartment complexes, multiplexes, and upcoming tech infrastructure.',
+    nearby_schools: ['POTE International School', 'School of Scholars'],
+    nearby_hospitals: ['Radiant Super Speciality Hospital'],
+    nearby_transit: ['Badnera Junction Railway Station (4 km)', 'State Highway']
+  },
+  {
+    id: 'loc-amr-camp',
+    city_name: 'Amravati',
+    district_name: 'Amravati',
+    name_en: 'Camp Area',
+    name_mr: 'कॅम्प परिसर',
+    name_hi: 'कैंप एरिया',
+    pincode: '444602',
+    avg_price_per_sqft: 4900,
+    median_price: 6500000,
+    total_listings_count: 11,
+    latitude: 20.9380,
+    longitude: 77.7690,
+    description: 'High-end, serene residential neighborhood host to district administration offices, lush green parks, and luxury independent houses.',
+    nearby_schools: ['Manibai Girls High School', 'St. Francis High School'],
+    nearby_hospitals: ['District General Hospital'],
+    nearby_transit: ['District Court Stop', 'Camp Ring Road']
+  },
+
+  // Pune Localities
+  {
+    id: 'loc-pne-wakad',
+    city_name: 'Pune',
+    district_name: 'Pune',
+    name_en: 'Wakad',
+    name_mr: 'वाकड',
+    name_hi: 'वाकड',
+    pincode: '411057',
+    avg_price_per_sqft: 7600,
+    median_price: 7400000,
+    total_listings_count: 42,
+    latitude: 18.5987,
+    longitude: 73.7689,
+    description: 'Major IT residential hub situated next to Hinjewadi Rajiv Gandhi IT Park. Highly preferred by tech professionals.',
+    nearby_schools: ['EuroSchool Wakad', 'Wisdom World School'],
+    nearby_hospitals: ['Lifepoint Multispecialty Hospital', 'Ruby Hall Clinic Hinjewadi'],
+    nearby_transit: ['Pune Metro Line 3', 'Mumbai-Bangalore Highway']
+  },
+  {
+    id: 'loc-pne-baner',
+    city_name: 'Pune',
+    district_name: 'Pune',
+    name_en: 'Baner',
+    name_mr: 'बाणेर',
+    name_hi: 'बानेर',
+    pincode: '411045',
+    avg_price_per_sqft: 9400,
+    median_price: 9800000,
+    total_listings_count: 36,
+    latitude: 18.5590,
+    longitude: 73.7868,
+    description: 'Upscale suburb known for fine dining, high-end gated communities, organic cafes, and quick access to Balewadi High Street.',
+    nearby_schools: ['The Orchid School', 'VIBGYOR High School'],
+    nearby_hospitals: ['Jupiter Hospital Baner', 'Manipal Hospital'],
+    nearby_transit: ['Baner Road', 'Balewadi Metro Station']
+  },
+  {
+    id: 'loc-pne-kothrud',
+    city_name: 'Pune',
+    district_name: 'Pune',
+    name_en: 'Kothrud',
+    name_mr: 'कोथरुड',
+    name_hi: 'कोथरुड',
+    pincode: '411038',
+    avg_price_per_sqft: 11200,
+    median_price: 12500000,
+    total_listings_count: 28,
+    latitude: 18.5074,
+    longitude: 73.8077,
+    description: 'Established cultural & residential core of Pune with top educational institutions, metro connectivity, and tree-lined avenues.',
+    nearby_schools: ['MIT World Peace University', 'MES Abasaheb Garware College'],
+    nearby_hospitals: ['Deenanath Mangeshkar Hospital', 'Sahyadri Hospital'],
+    nearby_transit: ['Vanaz Metro Station', 'Karve Road']
+  },
+
+  // Nagpur Localities
+  {
+    id: 'loc-ngp-civil-lines',
+    city_name: 'Nagpur',
+    district_name: 'Nagpur',
+    name_en: 'Civil Lines',
+    name_mr: 'सिव्हिल लाइन्स',
+    name_hi: 'सिविल लाइन्स',
+    pincode: '440001',
+    avg_price_per_sqft: 7200,
+    median_price: 8800000,
+    total_listings_count: 15,
+    latitude: 21.1539,
+    longitude: 79.0681,
+    description: 'Prestigious green belt of Nagpur hosting High Court Bench, Vidhan Bhavan, premium high-rises, and wide avenues.',
+    nearby_schools: ['Bishop Cotton School', 'St. Ursula Girls High School'],
+    nearby_hospitals: ['Wockhardt Super Speciality Hospital', 'Alexis Hospital'],
+    nearby_transit: ['Nagpur Metro Kasturchand Park Station', 'GPO Circle']
+  },
+  {
+    id: 'loc-ngp-manish-nagar',
+    city_name: 'Nagpur',
+    district_name: 'Nagpur',
+    name_en: 'Manish Nagar',
+    name_mr: 'मनिष नगर',
+    name_hi: 'मनीष नगर',
+    pincode: '440015',
+    avg_price_per_sqft: 4800,
+    median_price: 5200000,
+    total_listings_count: 27,
+    latitude: 21.0963,
+    longitude: 79.0803,
+    description: 'Fastest growing residential suburb located adjacent to MIHAN SEZ and Dr. Babasaheb Ambedkar International Airport.',
+    nearby_schools: ['Center Point School', 'St. Vincent Pallotti School'],
+    nearby_hospitals: ['KIMS Kingsway Hospital', 'Orange City Hospital'],
+    nearby_transit: ['Airport Metro Station', 'Wardha Road Flyover']
+  },
+
+  // Mumbai & Thane Localities
+  {
+    id: 'loc-bom-andheri-west',
+    city_name: 'Mumbai',
+    district_name: 'Mumbai Suburban',
+    name_en: 'Andheri West',
+    name_mr: 'अंधेरी पश्चिम',
+    name_hi: 'अंधेरी पश्चिम',
+    pincode: '400053',
+    avg_price_per_sqft: 24500,
+    median_price: 24000000,
+    total_listings_count: 55,
+    latitude: 19.1363,
+    longitude: 72.8277,
+    description: 'Vibrant entertainment hub of Mumbai featuring Lokhandwala Complex, movie studios, sea-view towers, and metro network.',
+    nearby_schools: ['Jamnabai Narsee School', 'SVP Enclave'],
+    nearby_hospitals: ['Kokilaben Dhirubhai Ambani Hospital'],
+    nearby_transit: ['Andheri West Metro Line 2A', 'Andheri Railway Station']
+  },
+  {
+    id: 'loc-thn-majewada',
+    city_name: 'Thane',
+    district_name: 'Thane',
+    name_en: 'Majiwada',
+    name_mr: 'माजीवडा',
+    name_hi: 'माजीवाड़ा',
+    pincode: '400601',
+    avg_price_per_sqft: 12800,
+    median_price: 11500000,
+    total_listings_count: 38,
+    latitude: 19.2154,
+    longitude: 72.9830,
+    description: 'Strategic junction in Thane connects Eastern Express Highway and Ghodbunder Road, featuring premium township projects.',
+    nearby_schools: ['Lodha World School', 'CP Goenka International School'],
+    nearby_hospitals: ['Jupiter Hospital Thane', 'Bethany Hospital'],
+    nearby_transit: ['Majiwada Junction', 'Thane Station (4.5 km)']
+  },
+
+  // Chhatrapati Sambhajinagar Localities
+  {
+    id: 'loc-csn-cidco',
+    city_name: 'Chhatrapati Sambhajinagar',
+    district_name: 'Chhatrapati Sambhajinagar',
+    name_en: 'CIDCO Cannaught',
+    name_mr: 'सिडको कॅनॉट',
+    name_hi: 'सिडको कैनॉट',
+    pincode: '431003',
+    avg_price_per_sqft: 5100,
+    median_price: 5800000,
+    total_listings_count: 22,
+    latitude: 19.8870,
+    longitude: 75.3620,
+    description: 'Well-planned CIDCO township sector with commercial markets, educational hubs, and direct highway connectivity.',
+    nearby_schools: ['Holy Cross English High School', 'SB High School'],
+    nearby_hospitals: ['MGM Medical College & Hospital'],
+    nearby_transit: ['Jalna Road Flyover', 'CIDCO Bus Stand']
+  },
+
+  // Nashik Localities
+  {
+    id: 'loc-nsk-college-road',
+    city_name: 'Nashik',
+    district_name: 'Nashik',
+    name_en: 'College Road',
+    name_mr: 'कॉलेज रोड',
+    name_hi: 'कॉलेज रोड',
+    pincode: '422005',
+    avg_price_per_sqft: 6400,
+    median_price: 6800000,
+    total_listings_count: 24,
+    latitude: 20.0050,
+    longitude: 73.7650,
+    description: 'Premier lifestyle and educational street in Nashik with boutique apartments, shopping arcades, and lush surroundings.',
+    nearby_schools: ['BYK College of Commerce', 'KBT College of Engineering'],
+    nearby_hospitals: ['Apollo Hospitals Nashik', 'Six Sigma Hospital'],
+    nearby_transit: ['College Road Stop', 'Nashik Road Station (9 km)']
+  }
+];
